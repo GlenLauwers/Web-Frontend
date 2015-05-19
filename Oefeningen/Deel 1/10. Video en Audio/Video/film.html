@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Keywords" content="" />
+    <title>Video</title>
+
+    <!-- Style -->
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <h1>Video</h1>
+
+    <div class="mijnFilm">
+      <img src="css/Foto's/tv.jpg" width="600">
+
+      <video id="mijnFilm">
+        <source src="mumu.mp4" type="video/mp4">  
+      </video>
+
+
+    </div>
+    <div class="knoppen">
+      <button onclick="afspelen()">Afspelen</button>
+      <button onclick="pauzeren()">Pauzeren</button>
+      <button onclick="springen(14)">Rustig</button>
+      <button onclick="springen(18)">Snel</button>
+      <button onclick="geluidMeer()">Volume +</button>
+      <button onclick="geluidMinder()">Volume -</button>
+      <div id="nu"></div>
+      <div id="lang"></div>
+    </div>
+
+    <div class="films">
+      <p>Kies uw film.</p>
+      <button onclick="andereVideo(this)">Mumu</button>
+      <button onclick="andereVideo(this)">dierenmensen</button>
+      <button onclick="andereVideo(this)">spring</button>
+      <button onclick="andereVideo(this)">tomandjerry</button>
+    </div>
+
+
+
+    <script type="text/javascript">
+      var film = document.getElementById("mijnFilm");
+
+      film.volume = 0.1;
+
+      tijdTonen();
+
+      function lengteVanFilm (){
+        document.getElementById("lang").innerHTML = film.duration;
+      }
+    
+      function andereVideo(welke) {
+        var nieuwFilm = welke.innerHTML + ".mp4";
+        console.log(nieuwFilm);
+        film.setAttribute('src',nieuwFilm);
+        film.load();
+      }
+    
+      function afspelen() {
+        film.play();
+        lengteVanFilm();  
+      }
+    
+      function pauzeren(){
+        film.pause();
+      }
+    
+      function springen(tijd) {
+        film.currentTime = tijd;
+      }
+    
+      function tijdTonen(){
+        var klok = setInterval(moment,50);
+        function moment(){
+          document.getElementById("nu").innerHTML = (film.currentTime).toFixed(1);
+        }
+      }
+      
+    
+      function geluidMeer () {
+        console.log(film.volume);
+    
+        if (film.volume<1) {
+          film.volume = eval(film.volume + 0.1); // 0 tot 1
+        } 
+    
+        if (eval(film.volume+0.1)>1) {
+          film.volume = 1;
+        }
+      
+      }
+    
+      function geluidMinder() {
+        console.log(film.volume);
+    
+        if (eval(film.volume- 0.1)<0) {
+          film.volume = 0;
+        }
+        if (film.volume<=1) {
+          film.volume = eval(film.volume - 0.1); // 0 tot 1
+        }  
+      
+      }
+    </script>
+  </body>
+</html>

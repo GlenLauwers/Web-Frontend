@@ -1,0 +1,86 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function:linear;
+	animation-iteration-count: infinite;
+	animation-timing-function:linear;
+
+}
+
+.sun{	
+	-webkit-animation-name:draaien;
+	-webkit-animation-duration:10s;
+	animation-name:draaien;
+	animation-duration:10s;
+}
+
+@-webkit-keyframes draaien {
+	from{transform:rotate(0deg);}
+	to{transform:rotate(360deg);}
+}
+@keyframes draaien {
+	from{transform:rotate(0deg);}
+	to{transform:rotate(360deg);}
+}
+
+.rain{
+	-webkit-animation-name:bewegen;
+	-webkit-animation-duration:3s;
+	animation-name:bewegen;
+	animation-duration:3s;
+}
+
+@-webkit-keyframes bewegen {
+	0%{left: 0px;}
+	50%{left: 20px;}
+	100%{left: 0px;}
+}
+@keyframes bewegen {
+	0%{left: 0px;}
+	50%{left: 20px;}
+	100%{left: 20px;}
+}
+
+.lightning{
+	-webkit-animation-name:bliksem;
+	-webkit-animation-duration:4s;
+	animation-name:bliksem;
+	animation-duration:4s;
+}
+
+@-webkit-keyframes bliksem {
+	0%{opacity: 0;}
+	10%{opacity: 100;}
+	20%{opacity: 0;}
+	30%{opacity: 100;}
+	40%{opacity: 0;}
+	100%{opacity: 0;}
+}
+@keyframes bliksem {
+	0%{opacity: 0;}
+	10%{opacity: 100;}
+	20%{opacity: 0;}
+	30%{opacity: 100;}
+	40%{opacity: 0;}
+	100%{opacity: 0;}
+}
+
+.snow{
+	-webkit-animation-name:sneeuwen;
+	-webkit-animation-duration:4s;
+	animation-name:sneeuwen;
+	animation-duration:4s;
+}
+
+@-webkit-keyframes sneeuwen {
+	0%{background-position: 0 0;}
+	100%{background-position: 0 82px;}
+}
+@keyframes sneeuwen {
+	0%{background-position: 0 0;}
+	100%{background-position: 0 82px;}
+}
+

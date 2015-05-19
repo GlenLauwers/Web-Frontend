@@ -1,0 +1,124 @@
+@charset "UTF-8";
+/* CSS Document */
+body, html {
+    margin: 0px;
+    padding: 0px;
+    font-family: arial;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.parkeermeter {
+    width: 600px;
+    padding: 40px;
+    margin: 0 auto;
+    background-color: #bebebe;
+}
+
+#parkeren {
+    cursor: pointer;
+    margin: 0 auto;
+    text-align: center;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    background-color: #999;
+    transition:  2s ;
+}
+
+#parkeren:hover{
+    color: #fff;
+    background-color: #d80000;
+}
+
+.meterscherm{
+	background-image: url("afbeelding/achtergrond.gif");
+	position: relative;
+	height: 80px;
+	width: 520px;
+	padding: 10px;
+}
+
+#pijl{
+	background-image: url("afbeelding/pijl.gif");
+	left:10px;
+	width: 20px;
+	height: 50px;
+	position: absolute;
+	margin:17px 0px 5px -2px;
+	transition: left 0.5s ;
+}
+
+.knoppenrij{
+	height: 80px;
+	width: 600px;
+	margin-bottom: 50px;
+}
+
+.knoppenrij ul{
+	margin-left: -40px;
+}
+
+.knoppenrij ul li{
+	float: left;
+	display: block;
+	height: 100px;
+	width: 100px;
+	text-align: center;
+	border-radius: 50%;
+	border: solid 10px #333333;	
+	background-color: #ff0000;
+	margin-right: 40px;
+	font-size: 30px;
+	line-height: 60px;
+	-webkit-transition: 2s; /*voor alle css parameters*/
+	-moz-transition: 2s;
+	-o-transition: 2s
+	transition 2s;
+}
+
+.knoppenrij a{
+	display: block;
+	text-decoration: none;
+	color: #ffffff;	
+	margin: 10px;
+}
+	
+
+.knoppenrij li:hover{
+	background-color: #e8ad3d;
+	border: solid 10px #ff0000;
+}
+
+.knoppenrij li{
+	list-style-type: none;
+	margin-right: 25px;
+}
+
+#geldscherm{
+	cursor: auto;
+    background-color: #000;
+    color: #fff;
+}
+
+#geldscherm:hover{
+	background-color: #000;
+    color: #fff;
+    border: 10px solid #333;
+}
+
+.ticketscherm{
+	background-color: white;
+	padding: 20px 20px 25px 20px; 
+}
+
+.informatie{
+	margin-bottom: 40px;
+}

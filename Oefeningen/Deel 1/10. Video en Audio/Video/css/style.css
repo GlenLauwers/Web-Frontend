@@ -1,0 +1,33 @@
+@charset "UTF-8";
+/* CSS Document */
+video{
+	position: absolute;
+	height: 200px;
+	width: 300px;
+	margin-top: 90px;
+	margin-left: 105px;
+}
+
+img{
+	position: absolute;
+}
+
+.knoppen{
+	position: absolute;
+	margin-top: 400px;
+	margin-left: 70px;
+}
+
+.knoppen button{
+	margin-right: 10px;
+}
+
+.films{
+	position: absolute;
+	margin-top: 450px;
+	margin-left: 70px;
+}
+
+.films button{
+	margin-right: 40px;
+}

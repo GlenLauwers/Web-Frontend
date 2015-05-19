@@ -1,0 +1,35 @@
+html, body {
+	font-family: sans-serif;
+}
+
+.bovenkant {
+	color: red;
+}
+.midden {
+	
+}
+
+		.midden p{
+			
+		}
+
+		.midden a{
+			
+		}
+
+		.midden a:hover, .midden a:focus{
+			
+		}
+
+		.midden ul li {
+			
+		}
+
+
+.onderkant {}
+
+.ccm-image-slider {
+	height: 400px;
+	overflow: hidden;
+
+}

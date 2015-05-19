@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#muziekspeler img{
+    position: absolute;
+    width: 900px;
+}
+
+#bediening{
+    position: absolute;
+    margin-top: 500px;
+    margin-left: 200px;
+}
+
+#bediening button{
+    margin-right: 55px;
+}
+
+#titel {
+    position: absolute;
+    width: 500px;
+    margin-top: 90px;
+    margin-left: 120px;
+    color: white;
+
+}
+#lijst{
+    position: absolute;
+    width: 75px;
+    margin-top: 70px;
+    margin-left: 650px;
+}
+
+#lijst button{
+    margin-bottom: 10px;
+}
+
+#lijst img{
+    position: absolute;
+    width: 450px;
+    margin-top: -20px;
+    margin-left: -550px;
+}
+#lijst p{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}

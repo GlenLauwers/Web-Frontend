@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Keywords" content="" />
+    <title>Ajax formulier</title>
+
+    <link href="css/style.css" rel="stylesheet">
+
+    <script type="text/javascript">
+
+    function doorsturen_naar_php()
+    {
+    var hr = new XMLHttpRequest();
+    var url = "kind.json";
+
+    hr.open( "GET" , url , true );
+
+    //Mogelijk maken om variabelen in de headers door te sturen.
+
+    hr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+    hr.onreadystatechange = function()
+    {
+      if (hr.readyState== 4 && hr.status ==200) 
+        {
+          var dataterug = JSON.parse(hr.responseText);
+          for(var obj in dataterug)
+          {
+            document.getElementById("terug").innerHTML = dataterug;
+            dataterug[obj].naam + " is  " + dataterug[obj].leeftijd + " jaar oud en woont in " + dataterug[obj].stad + "<br />";
+          }
+          
+        }
+    }
+
+    hr.send( null );
+    document.getElementById("terug").innerHTML = "Ik ben nog bezig!";
+  }
+
+    </script>
+
+  </head>
+  <body>
+    <h1>Ajax</h1>
+
+      <div id="terug"> </div>
+
+
+    
+
+
+  </body>
+</html>

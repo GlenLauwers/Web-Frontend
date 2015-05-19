@@ -1,0 +1,254 @@
+@charset "UTF-8";
+/* CSS Document */
+@font-face{ 
+	font-family: 'bebasneue';
+	src: url('fonts/webfont.eot');
+	src: url('fonts/webfont.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/webfont.woff') format('woff'),
+	     url('fonts/webfont.ttf') format('truetype'),
+	     url('fonts/webfont.svg#webfont') format('svg');
+}
+
+body{
+	margin: auto;
+	font-family: 'bebasneue';
+}
+
+h1{
+	color: #e8603c;	
+	font-size: 36pt;
+	font-weight: bold;
+}
+
+span{
+	color: #f3af9d;
+}
+
+.menu{
+	padding-top: 39px;
+}
+
+.menu a{
+	font-size: 16pt;
+	color: #b9b9b9;
+	padding-right: 20px;
+}
+
+.menu a:hover{
+	color: #e8603c;
+	text-decoration: none;
+}
+
+.menu em{
+	color: #e8603c;
+	text-decoration: none;
+	font-style: normal;
+}
+
+b{
+	color: #e8603c;
+}
+
+h2{
+	margin: 0;
+	font-size: 24pt;
+	color: #ffffff;
+
+
+}
+
+.titel{
+	background-color: #e8603c;
+	padding-top: 24px;
+	padding-bottom: 20px;
+	padding-left: 19px;
+	margin-bottom: 24px;
+}
+
+.filter{
+	margin-top: 11px;
+	margin-bottom: 25px;
+}
+
+.filter a{
+	font-size: 14pt;
+	color: #b9b9b9;
+	padding-top: 12px;
+	padding-left: 10px;
+	padding-bottom: 9px;
+	padding-right: 18px;
+}
+
+.filter a:hover{
+	text-decoration: none;
+	background-color: #e8663c;
+	color: #ffffff; 
+}
+
+.afbeelding{
+	margin-bottom: 41px;
+	border: solid thin #dbdbdb;
+	padding: 0px;
+	margin-right: 0px;
+}
+
+.afbeelding img{
+	width: 100%;
+}
+
+.afbeelding p{
+	margin-top: 17px;
+	margin-bottom: 0;
+	color: #b9b9b9;
+	font-size: 16pt;
+	padding-left: 14px;
+}
+
+.afbeelding i{
+	color: #e8663c;
+	font-size: 11pt;
+	font-style: normal;
+	margin-top: 10px;
+	padding-left: 14px;
+}
+
+.footer{
+	background-color: #e8663c;
+	color: #ffffff;
+	font-size: 12pt;
+}
+
+.footer h3{
+	font-size: 20pt;
+}
+
+.twitter{
+	padding-right: 10px;
+}
+
+.twitter span{
+	color: #f3b29d;
+}
+
+.twitter em{
+	color: #f3b29d;
+	font-style: normal;
+}
+
+.email{
+	margin: 0;
+	padding: 0;
+}
+
+.nummer{
+	margin: 0;
+	margin-bottom: 37px;
+	padding: 0;
+}
+
+footer{
+	text-align: center;
+	background-color: #e8663c;
+	color: #ffffff;
+	font-size: 12pt;
+}
+
+#page{
+	float: none;
+	margin: auto;	
+	width: 214px;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+#scherm{
+	width: 100%;
+	height: 100px;
+	background-color: #999;
+	text-align: center;
+	line-height: 50px;
+	overflow: scroll;
+}
+
+#rekenmachine{
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+#toetsenbord{
+	width: 75%;
+	float: left;
+}
+
+.getal{
+	background-color: black;
+}
+
+#rekenbord{
+	width: 25%;
+	float: right;
+}
+
+.getal{
+	background-color: black;
+	color: #fff;
+	-webkit-transition: 1s; 
+	-moz-transition: 1s;
+	-o-transition: 1s
+	transition 1s;
+}
+
+.bewerk{
+	background-color: #FC0;
+	-webkit-transition: 1s; 
+	-moz-transition: 1s;
+	-o-transition: 1s
+	transition 1s;
+}
+
+.knop{
+	font-size: 20px;
+	color: lightgrey;
+	padding: 16px;	
+	line-height: 50px;	
+}
+
+.getal:hover{
+	background-color: #FC0;
+}
+
+.bewerk:hover{
+	background-color: black;
+}
+
+.bewerk a{
+	display: block;
+	height: 50px;
+	width: 50px;
+}
+
+#bereken{
+	clear: both;
+	background-color: #999;
+	display: block;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 10px;
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	-o-transition: 1s
+	transition 1s;
+}
+
+#bereken a{
+	color: #ffffff;
+}
+
+#bereken:hover{
+	background-color: blue;
+}
+
+
+

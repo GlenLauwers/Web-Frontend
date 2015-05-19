@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Keywords" content="" />
+    <title>Ajax formulier</title>
+
+    <link href="css/style.css" rel="stylesheet">
+
+    <script type="text/javascript">
+
+    function doorsturen_naar_php()
+    {
+    var hr = new XMLHttpRequest();
+    var url = "formulier.php";
+    var vn = document.getElementById("voornaam").value;
+    var an = document.getElementById("achternaam").value;
+    var vars = "voornaam=" + vn + "&achternaam=" + an;
+
+    hr.open( "POST" , url , true );
+
+    //Mogelijk maken om variabelen in de headers door te sturen.
+
+    hr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+    hr.onreadystatechange = function()
+    {
+      if (hr.readyState== 4 && hr.status ==200) 
+        {
+          var dataterug = hr.responseText;
+          document.getElementById("terug").innerHTML = dataterug;
+        };
+    }
+
+    hr.send( vars );
+    document.getElementById("terug").innerHTML = "Ik ben nog bezig!";
+  }
+
+    </script>
+
+  </head>
+  <body>
+    <h1>Ajax</h1>
+
+      
+      <label for="voornaam">Voornaam:</label>
+        <input type="text" name="voornaam" id="voornaam">
+
+      <label for="achternaam">Achternaam:</label>
+        <input type="text" name="achternaam" id="achternaam">
+
+      <input type="submit" name="verzenden" id="verzenden" value="verzenden" onclick="doorsturen_naar_php">
+
+
+      <div id="terug"></div>
+
+    
+
+
+  </body>
+</html>

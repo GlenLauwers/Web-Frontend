@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Keywords" content="" />
+    <title>Tonen en verbergen</title>
+
+    <!-- Style -->
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <button onclick="weghalen()">TWEE WEG</button>
+    <button onclick="tonen()">TWEE terug</button>
+
+      <div class="een">ITEM 1</div>
+      <div class="twee">ITEM 2</div>
+      <div class="een">ITEM 1</div>
+      <div class="twee">ITEM 2</div>
+      <div class="een">ITEM 1</div>
+      <div class="twee">ITEM 2</div>
+      <div class="een">ITEM 1</div>
+      <div class="twee">ITEM 2</div>
+
+    <script type="text/javascript">
+      function weghalen()
+      {
+        var elementen = document.getElementsByClassName('twee');
+        var i;
+
+        for(i=0; i<elementen.length; i++)
+        {
+          elementen[i].className += " weg";
+        }
+      }
+
+      function tonen()
+      {
+        var elementen = document.getElementsByClassName('twee');
+        var i;
+
+        for(i=0; i<elementen.length; i++)
+        {
+          elementen[i].classList.remove('weg');
+        }
+      }
+    </script>
+  </body>
+</html>

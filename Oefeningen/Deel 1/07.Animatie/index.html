@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Keywords" content="" />
+    <title>Javascript animatie</title>
+
+    <!-- Style -->
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+
+  <div class="bol" onclick="bewegen(this)">BOL</div>
+
+  <div class="bol_zwart" onclick="kleuren(this)">BOL</div>
+
+  <div class="vierkant" onclick="bewegen(this)">VIERKANT</div>
+
+    <script type="text/javascript">
+    	
+    	function bewegen(element) 
+    	{
+    		var left = 0;
+    		var max_breedte = window.innerWidth;
+
+    		function stap()
+    		{
+    			left++;
+    			// var left van bewegen overnemen
+    			element.style.left = left + 'px';
+    			//element = parameter van bewegen (element) -> naar rechts bewegen
+
+    			if(left == (max_breedte - 100))
+    			{
+    				clearInterval(interval);
+    			}
+    		}
+    		var interval = setInterval(stap, 10);
+    	}
+
+    	function kleuren (element)
+    	{
+    		element.className += " zwart"
+    	}
+	
+    	
+    </script>
+
+  </body>
+</html>

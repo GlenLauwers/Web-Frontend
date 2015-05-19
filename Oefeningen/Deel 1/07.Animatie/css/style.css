@@ -1,0 +1,44 @@
+@charset "UTF-8";
+/* CSS Document */
+.bol{
+	position: absolute;
+	left: 0;
+	top: 100px;
+	height: 100px;
+	width: 100px;
+	border-radius: 50px;
+	background-color: red;
+	text-align: center;
+	line-height: 100px;
+	font-weight: bold;
+}
+
+.bol_zwart{
+	position: absolute;
+	left: 0;
+	top: 500px;
+	height: 100px;
+	width: 100px;
+	border-radius: 50px;
+	background-color: red;
+	text-align: center;
+	line-height: 100px;
+	font-weight: bold;
+}
+
+.vierkant{
+	position: absolute;
+	left: 0px;
+	top: 300px;
+	height: 100px;
+	width: 100px;
+	background-color: yellow;
+	text-align: center;
+	line-height: 100px;
+	font-weight: bold;
+}
+
+.zwart{
+	background-color: black;
+	color: #ffffff;
+}

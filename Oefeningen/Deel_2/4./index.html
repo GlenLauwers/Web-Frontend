@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gallerij met JSON</title>
+	<link rel="stylesheet" type="text/css" href="gallerij.css">
+
+<script type="text/javascript">
+	function ajax_json_gallerij() {
+
+		var thumbnaildoos = document.getElementById("thumbnaildoos");
+
+		var hr = new XMLHttpRequest();
+		hr.open("POST", "beeldenophalen.php", true);
+		hr.setRequestHeader("Content-type", "appliccation/x-www-form-urlencoded");
+
+		hr.onreadystatechange = function () {
+			if(hr.readyState == 4 && hr.status == 200) {
+				var dataVanErgens = JSON.parse(hr.responseText);
+				console.log (dataVanErgens);
+
+				for(var objectBinnen in dataVanErgens) {
+					if (dataVanErgens[objectBinnen].src) {
+						thumbnaildoos.innerHTML += '<div onclick="beeldplaatsen(\''+dataVanErgens[objectBinnen].src+'\')" ><img src="'+dataVanErgens[objectBinnen].src+'"></div>';
+					}
+				}
+
+			}
+		}
+		hr.send();
+	}
+
+	function beeldplaatsen(beeld){
+		var grootbeeld = document.getElementById("grootbeeld");
+		grootbeeld.innerHTML ='<img src="' +beeld+ '"  >';
+	}
+
+
+
+</script>
+
+
+</head>
+<body>
+
+<div class="bovenkant"></div>
+
+<div id="thumbnaildoos"></div>
+
+<div id="grootbeeld"></div>
+
+<script type="text/javascript">ajax_json_gallerij();</script>
+
+</body>
+</html>

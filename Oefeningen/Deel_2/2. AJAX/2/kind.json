@@ -1,0 +1,8 @@
+{
+	"k1": {"naam":"Jan", "leeftijd":25, "stad":"Mechelen"},
+	"k1": {"naam":"Jef", "leeftijd":12, "stad":"Antwerpen"},
+	"k1": {"naam":"Jos", "leeftijd":43, "stad":"Aalst"},
+	"k1": {"naam":"Dave", "leeftijd":53, "stad":"Buggenhout"},
+	"k1": {"naam":"Glen", "leeftijd":19, "stad":"Oostende"},
+	"k1": {"naam":"Piet", "leeftijd":44, "stad":"Dendermonde"}
+}

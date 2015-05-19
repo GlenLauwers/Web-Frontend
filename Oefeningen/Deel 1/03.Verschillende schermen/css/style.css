@@ -1,0 +1,102 @@
+@charset "UTF-8";
+/* CSS Document */
+.container{
+	width: 670px;
+	margin: 0 auto;
+}
+
+.blok .balk{
+	padding: 10px;
+	  	-webkit-box-sizing: border-box;
+     	-moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.blok{
+	float: left;
+	width: 200px;
+	height: 450px;
+	margin-bottom: 20px;
+	border: 2px solid;
+	border-radius: 25px;
+	box-shadow: 10px 10px 5px #8c938a;/*Schaduw x-waarde, y-waarde blur kleur*/
+	-webkit-transition: 1s; /*voor alle css parameters*/
+	-moz-transition: 1s;
+	-o-transition: 1s
+	transition 1s;
+}
+
+.blok:hover{
+	height: 400px;
+	width: 200px;
+	background: #fff;
+	-webkit-transform: translate(yellow);/*Translate = verplaatsen (x-waarde, y-waarde)*/
+	-moz-transform: translate(yellow);
+	-o-transform: translate(yellow);
+	-ms-transform: translate(yellow);
+	transform: translate(yellow);
+}
+
+.balk{
+	clear: both;
+	width: 100%;
+	height: 300px;
+	border-top-left-radius: 25px;
+	border-top-right-radius: 40px;
+}
+
+.links{
+	margin-right: 20px;
+}
+
+.grijs{
+	background-color: #d3ced3;
+}
+
+.groen{
+	background-color: #b0d38d;
+}
+
+.oranje{
+	background-color: #d39031;
+}
+
+.blauw{
+	background-color: lightblue;
+}
+
+/*media screens*/
+/*Tablet*/
+@media screen and (max-width: 767px){
+	.blok{
+		height: 350px;
+	}
+	h1{
+		font-size: 16px;
+	}
+}
+
+/*Mobiel*/
+@media screen and (max-width: 480px){
+	.blok{
+		width: 100%;
+		margin: 0;
+	}
+	h1{
+		font-size: 16px;
+	}
+
+	.blauw{
+		display: none;
+	}
+}
+
+/*Large desktop*/
+@media screen and (min-width: 768px) and (max-width: 1100px){
+	.blok{
+		background-color: yellow;
+	}
+	h1{
+		font-size: 50px;
+	}
+}

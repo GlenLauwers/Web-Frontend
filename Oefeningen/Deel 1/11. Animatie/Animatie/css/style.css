@@ -1,0 +1,141 @@
+@charset "UTF-8";
+/* CSS Document */
+/*Animatie*/
+.knop
+{
+	position: absolute;
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	-o-transition: 1s;
+	transition: 1s;
+	width: 100px;
+	height: 100px;
+	background-color: yellow;
+	text-align: center;
+	line-height: 100px;
+
+	-webkit-animation-name:bibberen;
+	-webkit-animation-duration:5s;
+	-webkit-animation-iteration-count:2;
+	-webkit-animation-fill-mode:forwards;
+	animation-name:bibberen;
+	animation-duration:5s;
+
+}
+
+.knop:hover
+{
+	height: 300px;
+	line-height: 300px;
+}
+
+.bol
+{
+	height: 150px;
+	width: 150px;
+	border-radius: 75px;
+	background-color: red;
+	text-align: center;
+	line-height: 150px;
+
+	-webkit-animation-name:bewegen;
+	-webkit-animation-duration:3s;
+	-webkit-animation-iteration-count:2;
+	-webkit-animation-fill-mode:forwards;
+	animation-name:bewegen;
+	animation-duration:3s;
+
+}
+
+@-webkit-keyframes bewegen
+{
+	from{width: 150px;}
+	to{width: 300px}
+}
+
+@keyframes bewegen
+{
+	from{width: 150px;}
+	to{width: 300px}
+}
+
+@-webkit-keyframes bibberen
+{
+	0%{left: 100px;}
+	20%{left: 300px; top: 300px;}
+	40%{left: 500px; top: 300px;}
+	60%{left: 100px; top: 200px;}
+	80%{left: 50px; top: 50px;}
+	100%{left: 0; top: 0;}
+}
+
+@keyframes bibberen
+{
+	0%{left: 100px;}
+	20%{left: 300px; top: 300px;}
+	40%{left: 500px; top: 300px;}
+	60%{left: 100px; top: 200px;}
+	80%{left: 50px; top: 50px;}
+	100%{left: 0; top: 0;}
+}
+
+/*Auto*/
+
+div
+{
+	float: left;
+}
+
+.auto
+{
+	width: 600px;
+	height: 200px;
+	bottom: 40px;
+}
+
+.kleur
+{
+	background-color: red;
+	position: absolute;
+}
+
+.achter
+{
+	width: 200px;
+	height: 80px;
+	border-top-right-radius: 30px;
+	border-bottom-right-radius: 5px;
+	left: 400px;
+	top:88px;
+}
+
+.midden
+{
+	width: 200px;
+	height: 160px;
+	border-top-right-radius: 60px;
+	border-top-left-radius: 20px;
+	left: 200px;
+}
+
+.voor{
+	width: 200px;
+	height: 70px;
+	border-top-left-radius: 35px;
+	border-bottom-left-radius: 5px;
+	top:98px;
+}
+
+.wiel{
+	position: absolute;
+	height: 60px;
+	width: 60px;
+	background-color: grey;
+	border: 10px solid black;
+	border-radius: 50%;
+	top: 130px;
+	line-height: 60px;
+	text-align: center;
+	color: red;
+	font-size: 30px;
+}

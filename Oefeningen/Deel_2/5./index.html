@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+
+<script>
+
+$(document).ready(function($) {
+    $("button").click( function() {
+         $.getJSON( "PDO.php", function(data) { 
+          $.each(data,function(i,dat){
+                  $("#results").append(
+                              '<div class="members">'+
+                              '<h1>'+dat.id+'</h1>'+
+                              '<p>Achternaam : <em>'+dat.Naam+'</em>'+
+                              '<p>Voornaam : <em>'+dat.Voornaam+'</em></p>'+
+                              '<p>Leeftijd : <strong>'+dat.Leeftijd+'</strong></p>'+
+                              '<hr>'+
+                              '</div>'
+                              );
+                  });
+          });
+     });
+});
+</script>
+
+
+
+</head>
+<body>
+    <h1>Json van mysql door php met jQuery</h1>
+<p>
+    <button>knop</button>
+</p>
+<ul></ul>
+<div id="results">
+    hier komt de resultaat
+</div>
+
+</body>
+</html>

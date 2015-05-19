@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/* CSS Document */
+div{
+	float: left;
+	height: 100px;
+	width: 100px;
+	margin: 0 20px 20px 0;
+	text-align: center;
+	line-height: 100px;
+}
+
+.een{
+	background-color: yellow;
+}
+
+.twee{
+	background-color: green;
+}
+
+.weg{
+	display: none;
+}

@@ -1,0 +1,102 @@
+@charset "UTF-8";
+/* CSS Document */
+h1{
+	text-align: center;
+}
+
+#page{
+	float: none;
+	margin: auto;	
+	width: 214px;
+	border: solid thin black;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+#scherm{
+	width: 100%;
+	height: 100px;
+	background-color: #999;
+	text-align: center;
+	line-height: 50px;
+	overflow: scroll;
+}
+
+#rekenmachine{
+	width: 100%;
+}
+
+#toetsenbord{
+	width: 75%;
+	float: left;
+}
+
+.getal{
+	background-color: black;
+}
+
+#rekenbord{
+	width: 25%;
+	float: right;
+}
+
+.getal, .bewerk {
+	display: block;
+	float: left;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	border: solid white;
+}
+
+.getal{
+	background-color: black;
+	color: #fff;
+	-webkit-transition: 1s; 
+	-moz-transition: 1s;
+	-o-transition: 1s
+	transition 1s;
+}
+
+.bewerk{
+	background-color: #FC0;
+	-webkit-transition: 1s; 
+	-moz-transition: 1s;
+	-o-transition: 1s
+	transition 1s;
+}
+
+.getal:hover{
+	background-color: #FC0;
+}
+
+.bewerk:hover{
+	background-color: black;
+	color: #fff ;
+}
+
+#bereken{
+	clear: both;
+	background-color: #999;
+	display: block;
+	width: 100%;
+	text-align: center;
+	line-height: 50px;
+	font-size: 20px;
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	-o-transition: 1s
+	transition 1s;
+}
+
+#bereken a{
+	color: #ffffff;
+}
+
+#bereken:hover{
+	background-color: blue;
+}
+

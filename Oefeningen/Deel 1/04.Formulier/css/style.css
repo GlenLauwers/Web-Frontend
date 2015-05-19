@@ -1,0 +1,72 @@
+@charset "UTF-8";
+/* CSS Document */
+html{
+	margin-left: 10px;
+}
+
+#fbpersoon{
+	display: none;
+	font-size: 20px;
+	width: 260px;
+	padding: 30px;
+	background-color: #f771f4;
+	border: 3px solid red;
+	margin-bottom: 10px;
+}
+
+.page{
+	margin: 0 ;
+	width: 400px;
+}
+
+form{
+	font-family: fantasy;
+	font-size: 16px;
+}
+
+fieldset{
+	padding-top: 30px;
+}
+
+input{
+	font-size: 12px;
+	display: block;
+	height: 30px;
+	width: 200px;
+	margin-bottom: 30px;
+	padding: 10px;
+	border: 1px solid #d2c5cf;
+	-webkit-transition: 1s; /*voor alle css parameters*/
+	-moz-transition: 1s;
+	-o-transition: 1s
+	transition 1s;
+}
+
+input:focus{
+	color: #057c0d;
+	background-color: #e7dfdb;
+}
+
+input[type=submit], input[type=reset]{
+	padding: 10px;
+	cursor: pointer;
+	color: #000;
+	text-transform: uppercase;
+	border: none;
+	font-size: 12px;
+}
+
+input[type=submit]:hover, input[type=reset]:hover{
+	background-color: red;
+	color: #000;
+}
+
+input:focus{
+	background-color: yellow;
+	border: none;
+}
+
+label{
+	margin-bottom: 15px;
+}
+

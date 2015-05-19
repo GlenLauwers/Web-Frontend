@@ -1,0 +1,38 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: #FFF;
+	color:#000;
+}
+
+div.bovenkant {
+	position: fixed;
+	padding: 20px;
+	font-size: 36px;
+	width: 100%;
+	border-bottom: #000 2px solid;
+}
+
+div#thumbnaildoos {
+	float: left;
+	margin-top: 90px;
+	width: 120px;
+}
+
+div#thumbnaildoos>div {
+}
+
+div#thumbnaildoos>div>img {
+	width: 100px;
+}
+
+div#grootbeeld {
+	position: fixed;
+	left:140px;
+	top:90px;
+	width: 500px;
+	height: 500px;
+}
+div#grootbeeld>img {
+	width: 500px;
+}

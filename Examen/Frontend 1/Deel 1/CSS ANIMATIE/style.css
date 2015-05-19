@@ -1,0 +1,96 @@
+body {
+  background: #222;
+}
+
+hr {
+  border-color: #ddd;
+}
+
+.icon-wrapper {
+  margin: 250px 100px 0px 100px;
+  display: flex;
+}
+
+.icon {
+  flex: 1;
+  min-width: 200px;
+}
+
+.weather { position: relative; }
+.element {
+  position: absolute;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.sun {
+  background-image: url(images/sun.png);
+  width: 150px;
+  height: 150px;
+}
+
+.cloud {
+  background-image: url(images/cloud.png);
+  width: 150px;
+  height: 80px;
+}
+
+.rain {
+  width: 150px;
+  height: 92px;
+  background-image: url(images/rain.png);
+}
+
+.lightning {
+  height: 121px;
+  width: 51px;
+  background-image: url("images/lightning.png");
+}
+
+.snow {
+  width: 138px;
+  height: 61px;
+  background-image: url("images/snow.png");
+  background-repeat: repeat-y;
+  background-size: cover;
+}
+
+.weather-partly-cloudy > .sun,
+.weather-rain-sunny > .sun {
+  width: 125px;
+  height: 125px;
+}
+
+.weather-partly-cloudy > .cloud,
+.weather-rain-sunny > .cloud {
+  width: 135px;
+  height: 74px;
+  left: 20px;
+  top: 52px;
+}
+
+.weather-rain > .rain,
+.weather-rain-sunny > .rain,
+.weather-lightning > .rain {
+  height: 76px;
+  width: 125px;
+  left: 20px;
+  top: 130px;
+}
+
+.weather-rain > .rain,
+.weather-lightning > .rain {
+  left: 10px;
+  top: 85px;
+}
+
+.weather-lightning > .lightning {
+  left: 42px;
+  top: 85px;
+  opacity: 0;
+}
+
+.weather > .snow {
+  top: 85px;
+}

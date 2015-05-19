@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quiz Examen</title>
+
+    <!-- Style -->
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="score">
+      <h1>Uw Score:</h1>
+      <p id="punten"></p> 
+    </div>
+
+    <div class="vragen">
+
+      <form action="index.html" name="formulier" method="POST" onsubmit="return (valideren())">
+
+      <div id="vraag_1">
+        <div class="foto">
+          <img src="beelden/batman.jpg" alt="foto">
+        </div>
+
+        <div class="vraag">
+          <h2>Wie is dit?</h2>
+        </div>
+
+        <div class="antwoord_foto">
+            <input type="text" name="f_antwoord1" onchange="return (gedaan())">
+        </div>
+      </div>
+
+      <div id="vraag_2">
+          <video class="video" controls>
+            <source src="movies/Congratulations.mp4" type="video/mp4">
+          </video>
+  
+        <div class="vraag">
+          <h2>Uit welke film?</h2>
+        </div> 
+
+        <div class="antwoord_video">       
+            <input type="text" name="f_antwoord2" onchange="return (gedaan())">    
+        </div> 
+      </div>
+
+      <div id="vraag_3">
+        <div class="foto">
+          <img src="beelden/daltons.jpg" alt="foto">
+        </div>
+
+        <div class="vraag">
+          <h2>Wie is dit?</h2>
+        </div>
+
+        <div class="antwoord_foto">      
+            <input type="text" name="f_antwoord3" onchange="return (gedaan())">     
+        </div>
+      </div>
+
+      <div id="vraag_4">
+          <video class="video" controls>
+            <source src="movies/italian.mp4" type="video/mp4">
+          </video>
+  
+        <div class="vraag">
+          <h2>Uit welke film?</h2>
+        </div>  
+
+        <div class="antwoord_video">        
+            <input type="text" name="f_antwoord4" onchange="return (gedaan())">      
+        </div>
+      </div>
+
+      <div id="vraag_5">
+        <div class="foto">
+          <img src="beelden/SuskeWiske.jpg" alt="foto">
+        </div>
+
+        <div class="vraag">
+          <h2>Wie is dit?</h2>
+        </div>
+
+        <div class="antwoord_foto">
+            <input type="text" name="f_antwoord5" onchange="return (gedaan())">   
+        </div>
+      </div>
+
+      <div id="vraag_6">
+          <video class="video" controls>
+            <source src="movies/Robbedoes.mp4" type="video/mp4">
+          </video>
+  
+        <div class="vraag">
+          <h2>Uit welke film?</h2>
+        </div> 
+
+        <div class="antwoord_video">
+            <input type="text" name="f_antwoord6" onchange="return (gedaan())">  
+        </div> 
+      </div>
+
+      <div id="vraag_7">
+        <div class="foto">
+          <img src="beelden/Wonderwoman.jpg" alt="foto">
+        </div>
+
+        <div class="vraag">
+          <h2>Wie is dit?</h2>
+        </div>
+
+        <div class="antwoord_foto">
+            <input type="text" name="f_antwoord7" onchange="return (gedaan())">        
+        </div>
+      </div>
+
+      <div id="vraag_8">
+          <video class="video" controls>
+            <source src="movies/wednesday.mp4" type="video/mp4">
+          </video>
+  
+        <div class="vraag">
+          <h2>Uit welke film?</h2>
+        </div>  
+
+        <div class="antwoord_video">
+            <input type="text" name="f_antwoord8" onchange="return (gedaan())">       
+        </div>
+      </div>
+
+        <input class="verzenden" type="submit" value="Verzenden" name="f_verzenden">
+    
+     </form>
+    </div>
+ 
+    <script type="text/javascript" src="js/valideren.js"></script>
+    <script type="text/javascript" src="js/gedaan.js"></script>
+  </body>
+</html>

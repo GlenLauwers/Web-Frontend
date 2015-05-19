@@ -1,0 +1,212 @@
+@charset "UTF-8";
+/* CSS Document */
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function:linear;
+	animation-iteration-count: infinite;
+	animation-timing-function:linear;
+
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	width: 1500px;
+}
+
+h1{
+	display: block;
+	position: absolute;
+}
+
+.lucht{
+	background-color: #7CEBFF;
+	height: 450px;
+}
+
+.zon{
+	position: absolute;
+	margin-left: 80%;
+
+	-webkit-animation-name:draaien;
+	-webkit-animation-duration:5s;
+	animation-name:draaien;
+	animation-duration:5s;
+}
+@-webkit-keyframes draaien {
+	from{transform:rotate(0deg);}
+	to{transform:rotate(360deg);}
+}
+@keyframes draaien {
+	from{transform:rotate(0deg);}
+	to{transform:rotate(360deg);}
+}
+
+.wolk1{
+	position: absolute;
+	margin-left: 100px;
+	margin-top: 80px;
+
+	-webkit-animation-name:wolk1;
+	-webkit-animation-duration: 10s;
+	animation-name:wolk1;
+	animation-duration: 10s;
+}
+
+@-webkit-keyframes wolk1{
+	0%{margin-top: 80px; margin-left: 100px;}
+	25%{margin-top: 70px; margin-left: 60px;}
+	50%{margin-top: 60px; margin-left: 60px;}
+	75%{margin-top: 70px; margin-left: 60px;}
+	100{margin-top: 80px; margin-left: 100px;}
+}
+
+
+@keyframes wolk1{
+	0%{margin-top: 80px; margin-left: 100px;}
+	25%{margin-top: 70px; margin-left: 60px;}
+	50%{margin-top: 60px; margin-left: 60px;}
+	75%{margin-top: 70px; margin-left: 60px;}
+	100{margin-top: 80px; margin-left: 100px;}
+}
+
+.wolk2{
+	position: absolute;
+	margin-left: 920px;
+	margin-top: 40px;
+
+	-webkit-animation-name:wolk2;
+	-webkit-animation-duration: 15s;
+	animation-name:wolk1;
+	animation-duration: 15s;
+}
+
+@-webkit-keyframes wolk2{
+	0%{margin-top: 40px; margin-left: 920px;}
+	25%{margin-top: 40px; margin-left: 910px;}
+	50%{margin-top: 30px; margin-left: 910px;}
+	75%{margin-top: 40px; margin-left: 900px;}
+	100{margin-top: 40px; margin-left: 920px;}
+}
+
+
+@keyframes wolk2{
+	0%{margin-top: 30px; margin-left: 900px;}
+	25%{margin-top: 40px; margin-left: 910px;}
+	50%{margin-top: 30px; margin-left: 910px;}
+	75%{margin-top: 40px; margin-left: 900px;}
+	100{margin-top: 40px; margin-left: 920px;}
+}
+
+.boot{
+	position: absolute;
+	margin-left: -100px;
+	margin-top: 160px;
+
+	-webkit-animation-name:drijven;
+	-webkit-animation-duration:20s;
+	animation-name:drijven;
+	animation-duration:20s;
+}
+
+@-webkit-keyframes drijven {
+	from{margin-left: -300px}
+	to{margin-left: 1300px;}
+}
+@keyframes drijven {
+	from{margin-left: -300px}
+	to{margin-left: 1300px;}
+}
+
+.zee{
+	background-color: #2E3192;
+	height: 200px;
+}
+
+.golf1 img{
+	position: absolute;
+	margin-top: 60px;
+	margin-left: 50px;
+
+	-webkit-animation-name:golf1;
+	-webkit-animation-duration: 5s;
+	animation-name:golf;
+	animation-duration:5s;
+}
+
+@-webkit-keyframes golf1{
+	0%{margin-top: 60px; margin-left: 50px;}
+	25%{margin-top: 70px; margin-left: 60px;}
+	50%{margin-top: 60px; margin-left: 60px;}
+	75%{margin-top: 70px; margin-left: 60px;}
+	100{margin-top: 60px; margin-left: 50px;}
+}
+
+
+@keyframes golf1{
+	0%{margin-top: 60px; margin-left: 50px;}
+	25%{margin-top: 70px; margin-left: 60px;}
+	50%{margin-top: 60px; margin-left: 60px;}
+	75%{margin-top: 70px; margin-left: 60px;}
+	100{margin-top: 60px; margin-left: 50px;}
+}
+
+.golf2 img{
+	position: absolute;
+	margin-top: 30px;
+	margin-left: 900px;
+
+	-webkit-animation-name:golf2;
+	-webkit-animation-duration: 5s;
+	animation-name:golf;
+	animation-duration:5s;
+}
+
+@-webkit-keyframes golf2{
+	0%{margin-top: 30px; margin-left: 900px;}
+	25%{margin-top: 40px; margin-left: 910px;}
+	50%{margin-top: 30px; margin-left: 910px;}
+	75%{margin-top: 40px; margin-left: 900px;}
+	100{margin-top: 30px; margin-left: 900px;}
+}
+
+
+@keyframes golf2{
+	0%{margin-top: 30px; margin-left: 900px;}
+	25%{margin-top: 40px; margin-left: 910px;}
+	50%{margin-top: 30px; margin-left: 910px;}
+	75%{margin-top: 40px; margin-left: 900px;}
+	100{margin-top: 30px; margin-left: 900px;}
+}
+
+.golf3 img{
+	position: absolute;
+	margin-top: 120px;
+	margin-left: 550px;	
+
+	-webkit-animation-name:golf3;
+	-webkit-animation-duration: 5s;
+	animation-name:golf;
+	animation-duration:5s;
+}
+
+@-webkit-keyframes golf3{
+	0%{margin-top: 120px; margin-left: 550;}
+	25%{margin-top: 140px; margin-left: 560px;}
+	50%{margin-top: 143px; margin-left: 570px;}
+	75%{margin-top: 130px; margin-left: 560px;}
+	100{margin-top: 120px; margin-left: 550;}
+}
+
+
+@keyframes golf3{
+	0%{margin-top: 30px; margin-left: 900px;}
+	25%{margin-top: 40px; margin-left: 910px;}
+	50%{margin-top: 30px; margin-left: 910px;}
+	75%{margin-top: 40px; margin-left: 900px;}
+	100{margin-top: 30px; margin-left: 900px;}
+}

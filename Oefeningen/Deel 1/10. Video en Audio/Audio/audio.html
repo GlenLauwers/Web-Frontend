@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML audio</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<h1>Muziekspeler</h1>
+<div id="muziekspeler">
+      <img src="afbeeldingen/Ipad.jpg" >
+      <div id="scherm">
+        <audio id="mijnMuziek">
+          <source src="Lorde - Team.mp3" type="audio/mp3">
+      </audio>
+
+
+      
+    </div>
+    <div id="titel">
+     
+    </div>
+
+    <div id="afbeelding"></div>
+
+    <div id="lijst">
+      <p>Kies lied</p>
+      <button class="stukken" cover="Lorde - Team" song="Lorde - Team" titel="Lorde - Team" onclick="andereMuziek(this)"> Lorde - Team</button>
+      <button class="stukken" cover="Elo - Turn To Stone" song="Elo - Turn To Stone" titel=="Elo - Turn To Stone" onclick="andereMuziek(this)">Elo - Turn To Stone</button>
+      <button class="stukken" onclick="andereMuziek(this)">The Script - No good in goodbye</button>
+      <button class="stukken" onclick="andereMuziek(this)">Hozier - Take me to church</button>
+      <button class="stukken" onclick="andereMuziek(this)">James Bay - Hold Back The River</button>
+      <button class="stukken" onclick="andereMuziek(this)">London Grammar -strong</button>
+    </button>
+
+     <div id="bediening">
+      <button onclick="afspelen()">Afspelen</button>
+      <button onclick="pauzeren()">Pauzeren</button>
+      <button onclick="geluidMeer()">Volume +</button>
+      <button onclick="geluidMinder()">Volume -</button>
+    </div>
+    
+</div>
+
+    <script type="text/javascript">
+    var muziek = document.getElementById("mijnMuziek");
+
+    function afspelen() {
+        muziek.play();
+        tijdTonen();
+        lengteVanmuziek ();
+        veranderTekst(titel);
+      }
+
+    function andereMuziek(welke) {
+        var nieuwmuziek = welke.innerHTML + ".mp3";
+        console.log(nieuwmuziek);
+        muziek.setAttribute('src',nieuwmuziek);
+        muziek.load();
+      }
+
+      function andereMuziek(cover) {
+        var cover = cover.getAttribute("cover");
+        var nCover = "afbeeldingen/" + cover + ".jpeg";
+
+      document.getElementById("afbeelding").src = nCover;
+      }
+
+      function pauzeren(){
+        muziek.pause();
+      }
+
+      function geluidMeer () {
+        console.log(muziek.volume);
+    
+        if (muziek.volume<1) {
+          muziek.volume = eval(muziek.volume + 0.1); // 0 tot 1
+        } 
+    
+        if (eval(muziek.volume+0.1)>1) {
+          muziek.volume = 1;
+        }
+      
+      }
+    
+      function geluidMinder() {
+        console.log(muziek.volume);
+    
+        if (eval(muziek.volume- 0.1)<0) {
+          muziek.volume = 0;
+        }
+        if (muziek.volume<=1) {
+          muziek.volume = eval(muziek.volume - 0.1); // 0 tot 1
+        }   
+      }
+    </script>
+
+
+</body>
+</html>

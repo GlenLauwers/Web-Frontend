@@ -1,0 +1,154 @@
+@font-face {
+    font-family: 'bebas_neueregular';
+    src: url('../fonts/bebasneue-webfont.eot');
+    src: url('../fonts/bebasneue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bebasneue-webfont.woff2') format('woff2'),
+         url('../fonts/bebasneue-webfont.woff') format('woff'),
+         url('../fonts/bebasneue-webfont.ttf') format('truetype'),
+         url('../fonts/bebasneue-webfont.svg#bebas_neueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    font-family: "bebas_neueregular";
+    letter-spacing: 1px;
+    -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+    
+}
+
+.jetro_header {
+    height: 80px;
+    line-height: 80px;
+}
+
+    .jetro-logo{
+        font-size: 42px;
+        margin-left: -15px;
+    }
+
+#jetro-menu {
+	background-color:#fff;
+            padding-top: 15px;
+	
+}
+
+#jetro-menu.navbar-default .navbar-brand {
+    color: #e8603c; /*oranje*/
+}
+#jetro-menu.navbar-default {
+    font-size: 24px;
+    background-color: #fff;
+    border-bottom-width: 0px;
+}
+#jetro-menu.navbar-default .navbar-nav>li>a { /*default*/
+    color: #b9b9b9; /*lichtgrijs*/
+    background-color: #fff; /*wit*/
+}
+
+#jetro-menu.navbar-default .navbar-nav>li>a:hover,
+#jetro-menu.navbar-default .navbar-nav>li>a:focus { /* menu items */
+    color: #e8603c;
+    background-color: #fff;
+}
+#jetro-menu.navbar-default .navbar-nav>.active>a,
+#jetro-menu.navbar-default .navbar-nav>.active>a:hover,
+#jetro-menu.navbar-default .navbar-nav>.active>a:focus {
+    color: #e8603c;
+    background-color: #fff;
+}
+
+/* toggle menu */
+
+#jetro-menu.navbar-default .navbar-toggle {
+	border-color: #e8603c;
+}
+#jetro-menu.navbar-default .navbar-toggle:hover,
+#jetro-menu.navbar-default .navbar-toggle:focus {
+    background-color: #fff;
+}
+#jetro-menu.navbar-default .navbar-toggle .icon-bar {
+    background-color: #e8603c;
+}
+#jetro-menu.navbar-default .navbar-toggle:hover .icon-bar,
+#jetro-menu.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: #e8603c;
+}
+
+
+
+.balk_portfolio {
+    height: 60px;
+    background-color: #e8603c;
+}
+
+.balk_portfolio h1 {
+    font-size: 30px;
+    line-height: 20px;
+    margin-left: 20px;
+    color: #fff;
+}
+
+.balk_filter {
+    height: 100px;
+}
+
+.menu-filter  {
+    list-style:none;
+    margin-top: 35px;
+    margin-left:-55px;
+}
+
+
+.menu-filter li  {
+    float:left;
+    display: block;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.menu-filter li a  {
+    color:#b9b9b9;
+    text-decoration: none; 
+    padding:5px 20px 5px 10px  /*TRBL*/
+}
+
+.menu-filter li a:hover  {
+    color:#fff;
+    background-color: #e8663c;
+    
+}
+
+.menuactive {
+    color:#fff;
+    background-color: #e8663c;
+    padding:5px 20px 5px 10px  /*TRBL*/
+    
+}
+
+.portfolio-item{
+    padding-left: 0px;
+    padding-bottom: 36px;
+}
+
+		.portfolio-item img{
+			width: 100%;
+		}
+
+        .portfolio-item-info{
+             border: solid 1px  #b9b9b9;
+             border-top:  solid 1px  #fff;
+             
+             padding-left: 20px;
+             padding-bottom: 20px;
+        }
+        .portfolio-item h2 {
+            color:#b9b9b9;
+            margin-top:16px;
+        }
+        .portfolio-item .datum {
+            color:#e8663c;
+            margin-top:16px;
+        }

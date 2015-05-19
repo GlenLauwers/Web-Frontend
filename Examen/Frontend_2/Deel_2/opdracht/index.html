@@ -1,0 +1,319 @@
+ <!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Namaste an Corporate Category Flat Bootstarp Resposive Website Template | Home :: w3layouts</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Namaste Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />	
+<link href="css/gallery.css" rel="stylesheet" type="text/css" media="all" />
+<script src="js/jquery-1.11.1.min.js"> </script>
+<!------ Light Box ------>
+<link rel="stylesheet" href="css/swipebox.css">
+<script src="js/jquery.swipebox.min.js"></script> 
+    <script type="text/javascript">
+		jQuery(function($) {
+			$(".swipebox").swipebox();
+		});
+	</script>
+<!------ Eng Light Box ------>	
+<script type="text/javascript">
+					jQuery(document).ready(function($) {
+						$(".scroll").click(function(event){		
+							event.preventDefault();
+							$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+						});
+					});
+					</script>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="header">
+	<div class="wrap">
+	   <div class="header_top">
+		<div class="icon">
+			<a href="index.html"><img src="images/logo_small.png" alt=""/></a>
+		</div>
+		<div class="menu">																
+			<a href="#" class="right_bt" id="activator"><img src="images/menu-icon.png" alt=""/></a>
+				<div class="box" id="box">
+				   <div class="box_content_center">
+					   <div class="menu_box_list">
+						   <ul>
+							    <li><a href="index.html" class="active">Home</a></li>
+								<li><a href="#works" data-hover="Works" class="scroll">Works</a></li>
+								<li><a href="#about" data-hover="About" class="scroll">About</a></li>
+								<li><a href="contact.html" data-hover="Contact">Contact</a></li>
+						   </ul>
+						</div>
+						<a class="boxclose" id="boxclose"><img src="images/close.png" alt=""/></a>
+					  </div>                
+					</div>
+			                 <script type="text/javascript">
+								var $ = jQuery.noConflict();
+									$(function() {
+										$('#activator').click(function(){
+												$('#box').animate({'left':'0px'},500);
+										});
+										$('#boxclose').click(function(){
+												$('#box').animate({'left':'-2500px'},500);
+										});
+									});
+									$(document).ready(function(){
+									
+									//Hide (Collapse) the toggle containers on load
+									$(".toggle_container").hide(); 
+									
+									//Switch the "Open" and "Close" state per click then slide up/down (depending on open/close state)
+									$(".trigger").click(function(){
+										$(this).toggleClass("active").next().slideToggle("slow");
+										return false; //Prevent the browser jump to the link anchor
+									});
+									
+									});
+								</script>
+			         </div> 	
+			<div class="clearfix"> </div>
+	     </div>
+	         <div class="logo">
+		     	<img src="images/logo.png" class="img-responsive" alt=""/>
+		     </div>
+		     <div class="header_arrow">
+	          <a href="#arrow" class="scroll"><span> </span></a>
+	        </div>
+	   </div>
+</div>	
+<div class="content_top" id="about">
+	<div class="container">
+	   <div class="grid_1">
+	   	 <h3>Who We Are</h3>
+	   	 <h1>Hello & Namaste</h1>
+	   	 <p>We do not build websites but user experiences. We judge our performance according to the impact it makes</p>
+	   </div>
+	   <div class="grid_2 text-center">
+			<div class="col-md-3 box_1">
+				<span class="top-icon1"> </span>
+				<h4>Web Design</h4>
+				<p>Fresh, lively and informative content, is key to any successful website, so take a look at your website's content on a regular basis. </p>
+			</div>
+			<div class="col-md-3 box_1 box_2">
+				<span class="top-icon2"> </span>
+				<h4>Development</h4>
+				<p>Fresh, lively and informative content, is key to any successful website, so take a look at your website's content on a regular basis. </p>
+			</div>
+			<div class="col-md-3 box_1">
+				<span class="top-icon3"> </span>
+				<h4>Graphics</h4>
+				<p>Fresh, lively and informative content, is key to any successful website, so take a look at your website's content on a regular basis. </p>
+			</div>
+			<div class="col-md-3 box_1">
+				<span class="top-icon4"> </span>
+				<h4>Illustrations</h4>
+				<p>Fresh, lively and informative content, is key to any successful website, so take a look at your website's content on a regular basis. </p>
+			</div>
+			<div class="clearfix"> </div>
+	   </div>
+	</div>
+</div>
+<div class="content_middle" id="works">
+	<div class="container">
+		<div class="grid_1">
+	   	 <h3>What We Do</h3>
+	   	 <h2>Our Works</h2>
+	   	 <p>Suspendisse ultrices eu massa non interdum. Cras eros nisi, pulvinar quis sem et, pellentesque blandit lacus. </p>
+	   </div>
+	   <div class="gallery autoplay items-3">
+			    <div id="item-1" class="control-operator"></div>
+
+				<figure class="item">
+			         <ul class="gallery">
+			         	<li>
+			         		<div class="view view-first"><a href="images/pic1.jpg" class="swipebox"  title="Image Title">
+			                  <div class="index_img"><img src="images/pic1.jpg" class="img-responsive" alt=""/></div>
+			   				     <div class="mask">
+			   				     	<div class="mask_desc">
+			                         	<h3>King Author</h3>
+			                         	<p>Photography</p>
+			                         </div>
+			                         <div class="info">  <img src="images/arrow.png" class="img-responsive" alt=""/></div>
+			                     </div>
+                 			</a></div> 
+			         	</li>
+			         	<li>
+			         		<div class="view view-first"><a href="images/pic2.jpg" class="swipebox"  title="Image Title">
+			                  <div class="index_img"><img src="images/pic2.jpg" class="img-responsive" alt=""/></div>
+			   				     <div class="mask">
+			   				     	<div class="mask_desc">
+			                         	<h3>King Author</h3>
+			                         	<p>Photography</p>
+			                         </div>
+			                         <div class="info"><img src="images/arrow.png" class="img-responsive" alt=""/></div>
+			                     </div>
+                 			</a></div> 
+			         	</li>
+			         	<li>
+			         		<div class="view view-first"><a href="images/pic3.jpg" class="swipebox"  title="Image Title">
+			                  <div class="index_img"><img src="images/pic3.jpg" class="img-responsive" alt=""/></div>
+			   				     <div class="mask">
+			   				     	<div class="mask_desc">
+			                         	<h3>King Author</h3>
+			                         	<p>Photography</p>
+			                         </div>
+			                         <div class="info"><img src="images/arrow.png" class="img-responsive" alt=""/></div>
+			                     </div>
+                 			</a></div> 
+			         	</li>
+			         	<li>
+			         		<div class="view view-first"><a href="images/pic4.jpg" class="swipebox"  title="Image Title">
+			                  <div class="index_img"><img src="images/pic4.jpg" class="img-responsive" alt=""/></div>
+			   				     <div class="mask">
+			   				     	<div class="mask_desc">
+			                         	<h3>King Author</h3>
+			                         	<p>Photography</p>
+			                         </div>
+			                         <div class="info"><img src="images/arrow.png" class="img-responsive" alt=""/></div>
+			                     </div>
+                 			</a></div> 
+			         	</li>
+			         	<div class="clearfix"> </div>
+			         </ul>
+			    </figure>
+	   </div>
+	</div>
+</div>
+<div class="content_top" id="arrow">
+	<div class="container">
+	   <div class="grid_1">
+	   	 <h3>Our Recent Posts</h3>
+	   	 <h4>Recent Blog</h4>
+	   	 <p>We do not build websites but user experiences. We judge our performance according to the impact it makes</p>
+	   </div>
+	   <div class="grid_2 text-center">
+			<div class="col-md-3 box_3"><a href="single.html">
+			    <img src="images/b1.jpg" class="img-responsive" alt=""/>
+			    <div class="blog_desc">
+			       <h3>People in our country love chaos</h3>
+			       <p>Fresh, lively and informative content, is key to any successful website, so take a look at your website's content on a regular basis. </p>
+			       <div class="date_desc">
+			          <div class="date_desc-left"><h4>23rd March 2015</h4></div>
+			          <div class="date_desc-right"><img src="images/arrow1.png" alt=""/></div>
+			          <div class="clearfix"> </div>
+			       </div>
+			   </div>
+			</a></div>
+			<div class="col-md-3 box_3"><a href="single.html">
+			    <img src="images/b2.jpg" class="img-responsive" alt=""/>
+			    <div class="blog_desc">
+			       <h3>Meople in our country love chaos</h3>
+			       <p>Fresh, lively and informative content, is key to any successful website, so take a look at your website's content on a regular basis. </p>
+			       <div class="date_desc">
+			          <div class="date_desc-left"><h4>23rd March 2015</h4></div>
+			          <div class="date_desc-right"><img src="images/arrow1.png" alt=""/></div>
+			          <div class="clearfix"> </div>
+			       </div>
+			   </div>
+			</a></div>
+			<div class="col-md-3 box_3"><a href="single.html">
+			    <img src="images/b3.jpg" class="img-responsive" alt=""/>
+			    <div class="blog_desc">
+			       <h3>Seople in our country love chaos</h3>
+			       <p>Fresh, lively and informative content, is key to any successful website, so take a look at your website's content on a regular basis. </p>
+			       <div class="date_desc">
+			          <div class="date_desc-left"><h4>23rd March 2015</h4></div>
+			          <div class="date_desc-right"><img src="images/arrow1.png" alt=""/></div>
+			          <div class="clearfix"> </div>
+			       </div>
+			   </div>
+			</a></div>
+			<div class="col-md-3 box_3"><a href="single.html">
+			    <img src="images/b1.jpg" class="img-responsive" alt=""/>
+			    <div class="blog_desc">
+			       <h3>People in our country love chaos</h3>
+			       <p>Fresh, lively and informative content, is key to any successful website, so take a look at your website's content on a regular basis. </p>
+			       <div class="date_desc">
+			          <div class="date_desc-left"><h4>23rd March 2015</h4></div>
+			          <div class="date_desc-right"><img src="images/arrow1.png" alt=""/></div>
+			          <div class="clearfix"> </div>
+			       </div>
+			   </div>
+			</a></div>
+			<div class="clearfix"> </div>
+	   </div>
+	</div>
+</div>
+<div>
+<div class="content_bottom">
+	<div class="container">
+		<h3>Sed ut perspiciatis unde omnis iste natus </h3>
+	</div>
+</div>	
+<div class="footer">
+	<div class="container">
+		<div class="col-sm-4">
+			<ul class="list_1">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">Disclaimer</a></li>
+			</ul>
+		</div>
+		<div class="col-sm-4">
+			<ul class="list_1">
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Photography</a></li>
+				<li><a href="#">Freebies</a></li>
+				<li><a href="#">Journal</a></li>
+				<li><a href="#">News</a></li>
+			</ul>
+		</div>
+		<div class="col-sm-4 list_2">
+		  <p>2147-5487-368</p>
+		  <p><span><a href="mailto:info@mycompany.com">info(at)mycompany.com</a></span></p>
+		  <p>On the other hand, denounce righteous</p>
+		  <ul class="social">
+			  <li><a href="#"> <i class="fb"> </i> </a></li>
+			  <li><a href="#"> <i class="tw"> </i> </a></li>
+			  <li><a href="#"> <i class="github"> </i> </a></li>
+			  <li><a href="#"> <i class="linked"> </i> </a></li>
+			  <li><a href="#"> <i class="google"> </i> </a></li>
+		  </ul>
+		</div>
+		<div class="clearfix"> </div>
+		<div class="copy">
+			<p>© 2015 All Rights Reseverd Template by <a href="http://w3layouts.com/">W3layouts</a> </p>
+		</div>
+	</div>
+	<script type="text/javascript">
+						$(document).ready(function() {
+							/*
+							var defaults = {
+					  			containerID: 'toTop', // fading element id
+								containerHoverID: 'toTopHover', // fading element hover id
+								scrollSpeed: 1200,
+								easingType: 'linear' 
+					 		};
+							*/
+							
+							$().UItoTop({ easingType: 'easeOutQuart' });
+							
+						});
+					</script>
+				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+</div>
+</body>
+</html>
+

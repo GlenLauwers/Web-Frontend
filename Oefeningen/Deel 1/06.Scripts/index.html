@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Keywords" content="" />
+    <title>Scripts</title>
+  </head>
+
+  <body>
+  
+  <script>
+    //Hoogste getal tonen.
+    /*var getal_1 = window.prompt("Geef me getal 1");
+    var getal_2 = window.prompt("Geef me getal 2");
+  
+    var hoogste = Math.max(getal_1,getal_2);
+    alert(hoogste);*/
+  
+    function controle()
+    {
+      var wat_is_letter = document.getElementById("veld").value;
+      
+      //Oplossing 1
+      /*if(wat_is_letter == "a" || wat_is_letter == "e" || wat_is_letter == "i" || wat_is_letter == "o" || wat_is_letter == "u")
+      {
+        document.getElementById("feedback").innerHTML = "Klinker!";
+      }
+
+      else
+      {
+        document.getElementById("feedback").innerHTML = "Medeklinker!";
+      }*/
+
+      //Oplossing 2
+      switch (wat_is_letter)
+      {
+        case "a": wat_is_letter="Klinker!";break;
+        case "e": wat_is_letter="Klinker!";break;
+        case "i": wat_is_letter="Klinker!";break;
+        case "o": wat_is_letter="Klinker!";break;
+        case "u": wat_is_letter="Klinker!";break;
+
+        default: wat_is_letter="Medeklinker!";break; 
+      }
+      document.getElementById("feedback_letter").innerHTML = wat_is_letter;
+    }
+
+    function schrikkeljaar()
+    {
+      var jaar = document.getElementById("jaar").value;
+
+      if ((jaar %4 == 0)|| (!jaar % 100==0) && (jaar % 400==0)  ) 
+      {
+        document.getElementById("feedback_jaar").innerHTML = "schrikkeljaar!";
+      }
+
+      else
+      {
+        document.getElementById("feedback_jaar").innerHTML = "GEEN schrikkeljaar!";
+      }
+    }
+
+  </script>
+  <h1>Klinker of niet</h1>  
+  <form>
+      <label>Geef een letter:</label>
+      <input id="veld" name="letter"/> 
+    </form>
+      <button onclick="controle()">Knop</button>
+    <div><p id="feedback_letter"></p></div>
+
+  <h1>Schrikkeljaar of niet</h1>
+  <form>
+      <label>Geef een jaar:</label>
+      <input id="jaar" name="jaar"/> 
+    </form>
+      <button onclick="schrikkeljaar()">Knop</button>
+    <div><p id="feedback_jaar"></p></div>
+
+   
+    </body> 
+</html>
